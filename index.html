@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clubs</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #D9D4C8;
+            color: #24201D;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1,h2,h3 { color: #792E29; margin-top: 0; }
+        p { line-height: 1.7; color: #24201D; }
+
+        label { display: block; margin-bottom: 6px; font-weight: 500; color: #565538; }
+
+        input, select, button {
+            background: #ABA38F;
+            border: 1px solid #565538;
+            color: #24201D;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        button:hover, select:hover, input:hover { border-color: #792E29; cursor: pointer; }
+
+        nav {
+            background: #24201D;
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #D9D4C8;
+            text-decoration: none;
+            margin-left: 22px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover { color: #792E29; }
+
+        .brand { font-size: 1.4rem; font-weight: bold; color: white; }
+        .container { padding: 40px 20px; max-width: 700px; margin: auto;  flex: 1; }
+
+        #info { margin-top: 20px; }
+
+        #clubinfo {
+            background: #ABA38F;
+            color: #24201D;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: monospace;
+            line-height: 1.6;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            color: #565538;
+            background: #ABA38F;
+            margin-top: 40px;
+            border-top: 1px solid #565538;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <span class="brand">School</span>
+    <div class="nav-links">
+        <a href="indexs.html">Clubs</a>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Clubs</h2>
+    <label for="club">Select a club:</label>
+    <select id="club">
+        <option value="choose">-- Choose a Club --</option>
+        <option value="club1">Debate Club<option>
+        <option value="club2">Science Club</option>
+        <option value="club3">Art Club</option>
+        <option value="club4">Environmental Club</option>
+        <option value="club5">Student Leadership Club</option>
+    </select>
+    <button py-click="information">Show Club Information</button>
+    <div id="info">
+        <div id="clubinfo"></div>
+    </div>
+</div>
+
+<footer>
+    <p>filler</p>
+</footer>
+
+<script type="py" src="main.py"></script>
+</body>
+</html>
