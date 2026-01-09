@@ -33,8 +33,9 @@ def information(event):
             "club3\n" 
             "filler"
         )
-        elif club == "club5":
+    elif club == "club5":
         output.innerText = (
             "club3\n" 
             "filler"
         )
+
