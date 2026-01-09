@@ -30,14 +30,15 @@ def information(event):
         )
     elif club == "club4":
         output.innerText = (
-            "club3\n" 
+            "club4\n" 
             "filler"
         )
     elif club == "club5":
         output.innerText = (
-            "club3\n" 
+            "club5\n" 
             "filler"
         )
     return
+
 
 
