@@ -38,4 +38,6 @@ def information(event):
             "club3\n" 
             "filler"
         )
+    return
+
 
